@@ -6,7 +6,7 @@ package:
 
 source:
   fn: otwrapy-{{ version }}.tar.gz
-  url: https://github.com/felipeam86/otwrapy/archive/{{ version }}.tar.gz
+  url: https://github.com/openturns/otwrapy/archive/{{ version }}.tar.gz
   sha256: f7fb1c4a39a55b96bbe5c91c718b06b063223a2d2fb04442df3197fce47f50c4
 
 build:
@@ -32,7 +32,7 @@ test:
     - otwrapy
 
 about:
-  home: https://github.com/felipeam86/otwrapy
+  home: https://github.com/openturns/otwrapy
   license: LGPLv3
   license_file: LICENSE
   summary: General purpose OpenTURNS python wrapper tools
