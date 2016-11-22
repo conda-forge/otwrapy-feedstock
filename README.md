@@ -1,7 +1,7 @@
 About otwrapy
 =============
 
-Home: https://github.com/felipeam86/otwrapy
+Home: https://github.com/openturns/otwrapy
 
 Package license: LGPLv3
 
@@ -31,7 +31,6 @@ It is possible to list all of the versions of `otwrapy` available on your platfo
 ```
 conda search otwrapy --channel conda-forge
 ```
-
 
 
 About conda-forge
