@@ -7,10 +7,10 @@ package:
 source:
   fn: otwrapy-{{ version }}.tar.gz
   url: https://github.com/openturns/otwrapy/archive/v{{ version }}.tar.gz
-  sha256: f72facf23074bc6aabae62f74e7162b69655ee1542721399e8a740fb24effcc1
+  sha256: 2b5d5105e7383a40e8ea89695dcf2d4ead189ec656a85498c11f673c430c8fc8
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
