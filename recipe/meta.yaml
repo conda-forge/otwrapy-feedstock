@@ -10,11 +10,13 @@ source:
   sha256: 2b5d5105e7383a40e8ea89695dcf2d4ead189ec656a85498c11f673c430c8fc8
 
 build:
-  number: 1
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 2
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
     - pytest-runner
@@ -34,6 +36,7 @@ test:
 
 about:
   home: https://github.com/openturns/otwrapy
+  license_family: LGPL
   license: LGPL3
   license_file: LICENSE
   summary: General purpose OpenTURNS python wrapper tools
