@@ -1,4 +1,4 @@
-{% set version = "0.7" %}
+{% set version = "0.8" %}
 
 package:
   name: otwrapy
@@ -7,10 +7,10 @@ package:
 source:
   fn: otwrapy-{{ version }}.tar.gz
   url: https://github.com/openturns/otwrapy/archive/v{{ version }}.tar.gz
-  sha256: 2b5d5105e7383a40e8ea89695dcf2d4ead189ec656a85498c11f673c430c8fc8
+  sha256: 32e8233ebafc9130e94088ed3282a88724d60a1f3415825fec77309e0cb6f945
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
