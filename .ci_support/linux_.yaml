@@ -9,7 +9,7 @@ docker_image:
 numpy:
 - '1.9'
 openturns:
-- '1.11'
+- 1.12*
 pin_run_as_build:
   openturns:
     max_pin: x.x
