@@ -10,7 +10,7 @@ source:
   sha256: 823678fb65e09df972cc6c7a65437a071659f696dfd9aefb0c3697d8d96b3fba
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script:
     - "{{ PYTHON }} -m pip install . --no-deps -vv"
@@ -23,14 +23,14 @@ requirements:
     - setuptools
     - pytest-runner
     - numpy
-    - openturns 1.15*
+    - openturns 1.16*
   run:
     - python
     - numpy
     - joblib >=0.9.3
     - ipyparallel >=5.0.1
     - pathos >=0.2.0
-    - openturns 1.15*
+    - openturns 1.16*
 
 test:
   imports:
