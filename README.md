@@ -5,11 +5,9 @@ Home: https://github.com/openturns/otwrapy
 
 Package license: LGPL-3.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/otwrapy-feedstock/blob/master/LICENSE.txt)
 
 Summary: General purpose OpenTURNS python wrapper tools
-
-
 
 Current build status
 ====================
