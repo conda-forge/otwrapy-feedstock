@@ -25,7 +25,7 @@ requirements:
     - numpy
     - openturns 1.16*
   run:
-    - python
+    - python >=3.6
     - numpy
     - joblib >=0.9.3
     - ipyparallel >=5.0.1
