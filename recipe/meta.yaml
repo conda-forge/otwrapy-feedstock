@@ -1,4 +1,4 @@
-{% set version = "0.9" %}
+{% set version = "0.10" %}
 
 package:
   name: otwrapy
@@ -7,10 +7,10 @@ package:
 source:
   fn: otwrapy-{{ version }}.tar.gz
   url: https://github.com/openturns/otwrapy/archive/v{{ version }}.tar.gz
-  sha256: 823678fb65e09df972cc6c7a65437a071659f696dfd9aefb0c3697d8d96b3fba
+  sha256: 001f091f20c8520ca5a4f6b9ea5de4ca1ec2bc193410194365bfc2e82a544c21
 
 build:
-  number: 4
+  number: 0
   noarch: python
   script:
     - "{{ PYTHON }} -m pip install . --no-deps -vv"
@@ -23,14 +23,14 @@ requirements:
     - setuptools
     - pytest-runner
     - numpy
-    - openturns 1.16*
+    - openturns >=1.16
   run:
     - python >=3.6
     - numpy
     - joblib >=0.9.3
     - ipyparallel >=5.0.1
     - pathos >=0.2.0
-    - openturns 1.16*
+    - openturns >=1.16
 
 test:
   imports:
