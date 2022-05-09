@@ -31,6 +31,8 @@ requirements:
     - ipyparallel >=5.0.1
     - pathos >=0.2.0
     - openturns >=1.16
+    - dask
+    - asyncssh
 
 test:
   imports:
