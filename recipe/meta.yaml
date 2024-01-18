@@ -1,4 +1,4 @@
-{% set version = "0.11" %}
+{% set version = "0.12" %}
 
 package:
   name: otwrapy
@@ -7,7 +7,7 @@ package:
 source:
   fn: otwrapy-{{ version }}.tar.gz
   url: https://github.com/openturns/otwrapy/archive/v{{ version }}.tar.gz
-  sha256: d6831cf0f86d8c681bb521817a97c477516b60780ef43c0370352c6acd984587
+  sha256: 98eadfe08356d2c7d65247a51c6d44d11a3228d05412fe5d32f73a3323d88270
 
 build:
   number: 0
