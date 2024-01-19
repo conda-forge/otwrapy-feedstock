@@ -33,6 +33,7 @@ requirements:
     - openturns >=1.16
     - dask
     - asyncssh
+    - tqdm
 
 test:
   imports:
