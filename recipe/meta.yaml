@@ -10,7 +10,7 @@ source:
   sha256: b96168ae6a2f076e5d5ea5da09597fa7100c3b7f424ab6dfcc03fb17eb1acd0d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . --no-deps -vv
@@ -19,13 +19,13 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python {{ python_min }}
     - setuptools
     - pytest-runner
     - numpy
     - openturns >=1.16
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - joblib >=0.9.3
     - ipyparallel >=5.0.1
@@ -36,6 +36,8 @@ requirements:
     - tqdm
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - otwrapy
 
